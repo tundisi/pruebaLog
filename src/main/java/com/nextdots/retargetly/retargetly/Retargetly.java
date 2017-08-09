@@ -26,11 +26,11 @@ public class Retargetly {
             }
             @Override
             public void onActivityStarted(Activity activity) {
-                Log.d("--LIBRARY Start",""+activity.getPackageName());
+                Log.d("--LIBRARY Start",""+activity.getLocalClassName());
             }
             @Override
             public void onActivityResumed(Activity activity) {
-                Log.d("--LIBRARY Resumed",""+activity.getPackageName());
+                Log.d("--LIBRARY Resumed",""+activity.getLocalClassName());
                 activeActivity = activity;
             }
             @Override
